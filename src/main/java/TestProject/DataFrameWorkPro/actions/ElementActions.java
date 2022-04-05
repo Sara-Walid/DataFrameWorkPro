@@ -11,7 +11,7 @@ import TestProject.DataFrameWorkPro.TestBase;
 
 public class ElementActions extends TestBase {
 
-    public WebElement getElement(By locator) {
+    public static WebElement getElement(By locator) {
         WebElement element = null;
         try {
             element = driver.findElement(locator);
@@ -44,7 +44,7 @@ public class ElementActions extends TestBase {
     }
 
    
-    public void scrollPageToElement(WebElement element) {
+    public static void scrollPageToElement(WebElement element) {
     	
         try {
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
@@ -57,13 +57,13 @@ public class ElementActions extends TestBase {
     }
 
    
-    public void highlightElement(WebElement element) {
+    public static void highlightElement(WebElement element) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].setAttribute('style', 'background: #ffffe6; border: 2px solid yellow;');", element);
     }
 
   
-    public void unhighlightElement(WebElement element) {
+    public static void unhighlightElement(WebElement element) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].removeAttribute('style','')", element);
     }
