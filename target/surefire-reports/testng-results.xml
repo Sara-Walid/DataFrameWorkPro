@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation" duration-ms="50010" started-at="2022-04-05T01:20:33 EET" finished-at="2022-04-05T01:21:23 EET">
+    <groups>
+    </groups>
+    <test name="Chrome test" duration-ms="50010" started-at="2022-04-05T01:20:33 EET" finished-at="2022-04-05T01:21:23 EET">
+      <class name="tests.LoginTestWithDataDriven">
+        <test-method status="PASS" signature="setBrowserType(java.lang.String)[pri:0, instance:tests.LoginTestWithDataDriven@1d8d30f7]" name="setBrowserType" is-config="true" duration-ms="13860" started-at="2022-04-05T01:20:34 EET" finished-at="2022-04-05T01:20:48 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowserType -->
+        <test-method status="PASS" signature="loadLoginData()[pri:0, instance:tests.LoginTestWithDataDriven@1d8d30f7]" name="loadLoginData" is-config="true" duration-ms="1377" started-at="2022-04-05T01:20:48 EET" finished-at="2022-04-05T01:20:49 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadLoginData -->
+        <test-method status="PASS" signature="login()[pri:0, instance:tests.LoginTestWithDataDriven@1d8d30f7]" name="login" duration-ms="21567" started-at="2022-04-05T01:20:49 EET" finished-at="2022-04-05T01:21:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tackeScreenShot()[pri:0, instance:tests.LoginTestWithDataDriven@1d8d30f7]" name="tackeScreenShot" is-config="true" duration-ms="11125" started-at="2022-04-05T01:21:11 EET" finished-at="2022-04-05T01:21:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tackeScreenShot -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.LoginTestWithDataDriven@1d8d30f7]" name="quitDriver" is-config="true" duration-ms="1181" started-at="2022-04-05T01:21:22 EET" finished-at="2022-04-05T01:21:23 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.LoginTestWithDataDriven -->
+    </test> <!-- Chrome test -->
+  </suite> <!-- Automation -->
+</testng-results>

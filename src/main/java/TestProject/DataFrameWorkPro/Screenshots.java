@@ -1,0 +1,29 @@
+package TestProject.DataFrameWorkPro;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+public class Screenshots extends TestBase{
+	public static int screenshoutNumber = 0;
+    public String captureScreenShot(String screenshotName)
+    {
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        File src = ts.getScreenshotAs(OutputType.FILE);
+        String dest = Paths.SCREENSHOTS+screenshotName+ screenshoutNumber++ +".png";
+        
+        try
+        {
+            FileUtils.copyFile(src, new File(dest));
+        }
+        catch (IOException e) {
+            System.out.println("Failed to get screenshot"+e.getMessage());
+            e.printStackTrace();
+        }
+        return dest;
+    }
+}
+
